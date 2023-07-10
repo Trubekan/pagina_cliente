@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.cam {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    position: fixed;
+    width: 26%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+.cam .fix-cambios {
+    position: absolute;
+    top: 7px;
+    left: 53px;
+    z-index: 4;
+}
+
+.cam .fix-cambios button {
+    color: white;
+    background-color: black;
+    background-color: rgb(230, 197, 16);
+    padding: 5px 5px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background .5s;
+    transition: all .5s;
+    border: none;
+    text-transform: uppercase;
+
+}
+
+.cam .fix-cambios button:hover {
+    color: black;
+    transform: scale(1.1);
+
+}
+
+
+
+.cam .options {
+    display: flex;
+    justify-content: center;
+    background: rgb(0, 0, 0);
+    padding: 10px 0px;
+}
+
+.options .options-li {
+    margin: 0;
+    padding: 0;
+}
+
+.options .options-li li {
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+.cam .cajas {
+    background: rgb(31, 28, 28);
+    padding-top: 20px;
+    
+}
+
+.cam .cajas h2 {
+    font-size: 2vw;
+}
+
+
+
+/*Dispositivos tabletas*/
+
+@media (max-width: 768px) {
+
+    .cam {
+        width: 50%;
+        z-index: 2;
+        height: 0%;
+        grid-template-columns: 100%;
+       
+    }
+
+    
+
+    .options .options-li {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 30px;
+    }
+
+    .options .options-li li {
+        margin-top: 0;
+    }
+
+    .cam .cajas h2 {
+        font-size: 3vw;
+    }
+
+}
+
